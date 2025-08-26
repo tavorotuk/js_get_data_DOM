@@ -7,10 +7,10 @@ const averagePopulation = document.querySelector('.average-population');
 let sum = 0;
 let count = 0;
 
-for (let el of arrayPopulation) {
+for (const el of arrayPopulation) {
   const num = Number(el.textContent.replace(/,/g, ''));
 
-  if (!isNaN(el)) {
+  if (!isNaN(num)) {
     sum += num;
     count++;
   }
